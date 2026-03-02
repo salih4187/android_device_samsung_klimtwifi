@@ -69,6 +69,6 @@ on boot
 
 # SENSOR FRAMEWORK : starts fingerprintService
 service vcsFPService /vendor/bin/vcsFPService
-    class main
-    user system
-    group system
+    class late_start
+    user root
+    group system input wakelock readproc
